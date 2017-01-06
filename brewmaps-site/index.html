@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>BrewDFW - Breweries</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,600,800" rel="stylesheet">
+    <script src="https://use.fontawesome.com/83a544bac4.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <nav> <a href="http://bhcvcom.dcccd.edu/~a_davis/Animation/">Breweries</a> <a href="#">Beer Styles</a> <a href="#">Growlers</a> <a href="#">About</a> <a href="#">Contact</a>
+                <div id="brewtxt">BrewDFW </div>
+                <div id="search">
+                    <form>
+                        <input type="text" class="search" placeholder="Search..." required>
+                        <input type="button" class="button" value="Search"> </form>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="maincontent">
+                <div id="dim" onclick="hide()"></div>
+                <div class="pop" id="pop1">
+                    <h2>3 Nations Brewing</h2> <span class="ph"><a href="tel:+14696607184">(469) 660-7184</a></span>
+                    <br>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.7555955425023!2d-96.90048338529753!3d32.931054983423316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c27b575b2e6b1%3A0xe2aefacb57bd877d!2s3+Nations+Brewing!5e0!3m2!1sen!2sus!4v1478143862121" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <div class="close" onclick="hide()"><i class="fa fa-times-circle-o" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="pop" id="pop2">
+                    <h2>Armadillo Ale Works</h2> <span class="ph"><a href="tel:+19405804446">(940) 580-4446</a></span>
+                    <br>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3338.0508360378453!2d-97.13026968528997!3d33.212763468947415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864dca255706d625%3A0x3da7e036c8883601!2sArmadillo+Ale+Works!5e0!3m2!1sen!2sus!4v1478146068726" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <div class="close" onclick="hide()"><i class="fa fa-times-circle-o" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="pop" id="pop3">
+                    <h2>Bitter Sisters Brewery</h2> <span class="ph"><a href="tel:+19405804446">(940) 580-4446</a></span>
+                    <br>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.8596700281246!2d-96.84937378529689!3d32.95471418221168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c26c60e4223c7%3A0xbe0fd053135b2108!2sBitter+Sisters+Brewery!5e0!3m2!1sen!2sus!4v1478146240066" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <div class="close" onclick="hide()"><i class="fa fa-times-circle-o" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="pop" id="pop4">
+                    <h2>Cobra Brewing Co.</h2> <span class="ph"><a href="tel:+19405804446">(940) 580-4446</a></span>
+                    <br>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3344.4762038631256!2d-96.99528838529453!3d33.04392767763602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c2e13ac72ad9b%3A0xabe5cac6e80d49e4!2sCobra+Brewing+Company!5e0!3m2!1sen!2sus!4v1478146278997" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <div class="close" onclick="hide()"><i class="fa fa-times-circle-o" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="pop" id="pop5">
+                    <h2>Deep Ellum Brewing</h2> <span class="ph"><a href="tel:+19405804446">(940) 580-4446</a></span>
+                    <br>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3354.431835281393!2d-96.78384838530154!3d32.78080729110037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e98e87786baa1%3A0x75eec0a87d4dea37!2sDeep+Ellum+Brewing+Company!5e0!3m2!1sen!2sus!4v1478146306628" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <div class="close" onclick="hide()"><i class="fa fa-times-circle-o" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="pop" id="pop6">
+                    <h2>Four Bullets Brewery</h2> <span class="ph"><a href="tel:+19405804446">(940) 580-4446</a></span>
+                    <br>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.6921356676107!2d-96.72838088529679!3d32.95913668198507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c1f13655d1d89%3A0x883cbe986930a0e!2sFour+Bullets+Brewery!5e0!3m2!1sen!2sus!4v1478146337783" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <div class="close" onclick="hide()"><i class="fa fa-times-circle-o" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="pop" id="pop7">
+                    <h2>Peticolas Brewing Company</h2> <span class="ph"><a href="tel:+19405804446">(940) 580-4446</a></span>
+                    <br>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3353.835702842747!2d-96.83121588530112!3d32.79661539029407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e995142ec01d3%3A0xc5c46b5fa19783e2!2sPeticolas+Brewing+Company!5e0!3m2!1sen!2sus!4v1478146371543" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <div class="close" onclick="hide()"><i class="fa fa-times-circle-o" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="pop" id="pop8">
+                    <h2>Rahr &amp; Sons Brewing Company</h2> <span class="ph"><a href="tel:+19405804446">(940) 580-4446</a></span>
+                    <br>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3356.083063911677!2d-97.32915638530272!3d32.73698499333365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e710c8a9862bd%3A0xca367ba6ecb55f93!2sRahr+%26+Sons+Brewing!5e0!3m2!1sen!2sus!4v1478146395061" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <div class="close" onclick="hide()"><i class="fa fa-times-circle-o" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="pop" id="pop9">
+                    <h2>Texas Ale Project</h2> <span class="ph"><a href="tel:+19405804446">(940) 580-4446</a></span>
+                    <br>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3354.2338793432095!2d-96.82049948530143!3d32.78605739083253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e99414ea55643%3A0x4c0c07c5adde21fc!2sTexas+Ale+Project!5e0!3m2!1sen!2sus!4v1478146426084" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <div class="close" onclick="hide()"><i class="fa fa-times-circle-o" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <section id="boxcontainer">
+                    <h1>Brewery Maps</h1>
+                    <div class="logo" onclick="show(1)"> <img src="images/3NB-logo.png"> </div>
+                    <div class="logo" onclick="show(2)"> <img src="images/aawlogo.png"> </div>
+                    <div class="logo" onclick="show(3)"> <img src="images/bigLOGO.png"> </div>
+                    <br>
+                    <div class="logo" onclick="show(4)"> <img src="images/5c3606d6e576d61ed69c02f7c2031fb9.png"> </div>
+                    <div class="logo" onclick="show(5)"> <img src="images/logo-deep-ellum-brewery-company.png"> </div>
+                    <div class="logo" onclick="show(6)"> <img src="images/4b6abc03065589ca15a4eae37505f17e.png"> </div>
+                    <br>
+                    <div class="logo" onclick="show(7)"> <img src="images/plogo.png"> </div>
+                    <div class="logo" onclick="show(8)"> <img src="images/logo_2x.png"> </div>
+                    <div class="logo" onclick="show(9)"> <img src="images/taplogo.png"> </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <footer> ©2016 BrewDFW
+    </footer>
+    <script>
+        var dim = document.getElementById("dim");
+        var pop = document.querySelectorAll(".pop");
+        var i;
+
+        function show(id) {
+            document.getElementById("pop" + id).style.display = "block";
+            dim.style.display = "block";
+          }
+
+        function hide() {
+            for (i = 0; i < pop.length; i++) {
+            pop[i].style.display = "none";
+            dim.style.display = "none";
+            }
+          }
+
+    </script>
+</body>
+
+</html>

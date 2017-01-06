@@ -1,0 +1,156 @@
+
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="../dobbin-site/slick/slick.css"/>
+
+<style>
+.fader {
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  -khtml-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+.moveup {
+  margin-top: -50vh;
+}
+body {
+  margin: 0 auto;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+header {
+  height: 50px;
+}
+.slider, .surround {
+  width: 100vw;
+  height: 50vh;
+}
+.articlebox {
+  width: 45%;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.55);
+  border: 2px solid  gold;
+  height: 80%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+transform: translate(-50%,-50%);
+}
+.white {
+  background: white;
+}
+.filler {
+  height: 100%;
+}
+#opening {
+  height: 50vh;
+  z-index: 999;
+}
+#videoBlock {
+    width: 100vw;
+    height: 50vh;
+    margin: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: -9999;
+}
+
+#videoBlock video {
+  margin-top: -20%;
+}
+</style>
+</head>
+<body>
+  <main>
+    <div class="white">
+      <header class="fader">
+        The header
+        </header>
+</main>
+  <div id="opening">
+  <div id="videoBlock" class="fader">
+
+        <video class="fade-in-video" id="myVideo" width="100%">
+
+      	</video>
+
+
+</div>
+</div>
+<div class="moveup">
+<section class="autoplay slider">
+
+    <div class="surround">
+      <div class="articlebox">
+        <h2>Article 1</h2>
+        <img src="null.jpg">
+          <p>Watching a drill.
+          </p>
+      </div>
+    </div>
+
+<div class="surround">
+<div class="articlebox">
+  <h2>Article 2</h2>
+  <img src="null.jpg">
+  <p>People walking up to a house.
+  </p>
+</div>
+</div>
+<div class="surround">
+<div class="articlebox">
+  <h2>Article 3</h2>
+  <img src="null.jpg">
+  <p>A Chandelier.
+  </p>
+</div>
+</div>
+<div class="surround">
+<div class="articlebox">
+  <h2>Article 4</h2>
+  <img src="null.jpg">
+  <p>Painting.
+  </p>
+</div>
+</div>
+</section>
+</div>
+
+
+<main>
+<div class="white">
+  <div class="filler">
+  </div>
+<footer>
+  Footer
+</footer>
+</div>
+</main>
+
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="../dobbin-site/slick/slick.min.js"></script>
+<script>
+
+$(document).on('ready', function() {
+
+      $(".autoplay").slick({
+    autoplay: true,
+    speed: 1000,
+    autoplaySpeed: 9000,
+    dots: false,
+    arrows: false,
+    swipeToSlide: true,
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    infinite: true,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    mobileFirst: true
+      });
+});
+</script>
+<script type="text/javascript" src="casa.js"></script>
+</body>
+</html>

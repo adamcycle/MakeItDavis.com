@@ -1,0 +1,170 @@
+html,
+body {
+  height: 100%
+}
+
+#wrapper {
+  min-height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 10.5pt;
+    line-height: 1.5;
+}
+nav {
+    width: auto;
+    background: #000;
+    color: #fff;
+    padding: 18px;
+    margin: 0 auto;
+    text-align: left;
+}
+nav a {
+    color: #ccc;
+    text-decoration: none;
+    padding-left: 15px;
+}
+nav a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+#brewtxt {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 30pt;
+    height: 50px;
+    float: left;
+    margin: -23px 10px 0 -5px;
+}
+h1 {
+    font-size: 32px;
+}
+h1,
+h2,
+h3 {
+    color: #555555;
+}
+h1.box {
+    line-height: 0.9;
+    color: #555555;
+    font-size: 20pt;
+}
+h2.box {
+    line-height: 0.5;
+    color: #555555;
+    font-size: 16pt;
+}
+p.box {
+    text-align: left;
+}
+#header {
+    width: auto;
+    position: relative;
+    text-align: right;
+}
+#search {
+    float: right;
+    margin-top: 0px;
+    height: 20px;
+    position: relative;
+}
+.search {
+    background: #1A1A1A;
+    border: 2px solid #2A2B2B;
+    color: #5E5E5E;
+}
+.button {
+    border: 2px solid #1A1A1A;
+    background-color: #1A1A1A;
+    color: #5E5E5E;
+}
+.button:hover {
+    border: 2px solid #2A2B2B;
+    background-color: #1A1A1A;
+    color: #5E5E5E;
+}
+input:required {
+    box-shadow: none;
+}
+.pop {
+    display: none;
+    background: #fff;
+    border: 3px solid #ccc;
+    border-radius: 20px;
+    padding: 10px 20px 20px 20px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.pop h2 {
+    line-height: 0.25em;
+}
+.close {
+    position: absolute;
+    top: 2px;
+    right: 8px;
+    font-size: 28px;
+    color: #ccc;
+}
+.fa-times-circle-o:hover {
+    color: #797979;
+    cursor: pointer;
+}
+.ph {
+    line-height: 0.5em;
+    font-size: 16px;
+}
+.ph a {
+    text-decoration: none;
+    color: #000;
+}
+section {
+    margin: auto;
+    text-align: center;
+}
+#dim {
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.75);
+}
+#maincontent {
+    width: auto;
+}
+#boxcontainer {
+    text-align: center;
+    width: 100%;
+}
+.logo {
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    background-color: #fff;
+    margin: 0 5px 10px 0;
+    border-radius: 100%;
+    overflow: visible;
+}
+.logo img {
+    width: 100%;
+    max-width: 200px;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+footer {
+    position: relative;
+    color: white;
+    text-align: center;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 5px;
+    font-size: 11px;
+    background: black;
+}

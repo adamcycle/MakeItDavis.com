@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style>
+.fade-in-video {
+    opacity: 0;
+    transition: opacity .8s linear;
+}
+.fade-in-video.is-playing {
+    opacity: 1;
+}
+</style>
+</head>
+
+
+<body>
+
+  <video class="fade-in-video" id="myVideo" height="320" controls>
+
+	</video>
+
+<script type="text/javascript">
+window.onload = function(e) {
+
+var videoSource = new Array();
+videoSource[0] = 'video/Handyman.mp4';
+videoSource[1] = 'video/Home.mp4';
+videoSource[2] = 'video/Chandelier.mp4';
+videoSource[3] = 'video/Fresh-Paint.mp4';
+videoSource[4] = 'video/Fresh-Paint.mp4';
+
+
+
+var i = 0; // define i
+var videoCount = videoSource.length;
+
+function videoPlay(videoNum) {
+    document.getElementById("myVideo").setAttribute("src", videoSource[videoNum]);
+    document.getElementById("myVideo").load();
+    document.getElementById("myVideo").play();
+}
+document.getElementById('myVideo').addEventListener('ended', myHandler, false);
+
+videoPlay(0); // play the video
+
+function myHandler() {
+    i++;
+    if (i == (videoCount - 1)) {
+        i = 0;
+        videoPlay(i);
+    } else {
+        videoPlay(i);
+    }
+}
+}
+
+
+var fade_in_videos = document.querySelectorAll('.fade-in-video');
+
+for( i=0; i<fade_in_videos.length; i++ ) {
+    fade_in_videos[i].addEventListener("playing", function(){
+        this.className += ' is-playing';
+    });
+}
+
+	   </script>
+
+
+
+
+</body>
+</html>

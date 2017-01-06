@@ -1,0 +1,42 @@
+<html>
+<head>
+  <style>
+  .fader {
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    -khtml-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+.under {
+  position: relative;
+}
+</style>
+</head>
+<body>
+  <div class="fader">
+    <div class="under">indside</div>
+  </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+  jQuery(function ($) {
+      function opa(selector, op, time) {
+          /* Params:
+           * selector: string,
+           * colors: array of color strings,
+           * every: integer (in mili-seconds)
+           */
+          var curOpa = 0,
+              timer = setInterval(function () {
+                  if (curOpa === op.length) curOpa = 0;
+                  $(selector).css("opacity", op[curOpa]);
+                  curOpa++;
+              }, time);
+      }
+      $(window).load(function () {
+          opa(".fader", ["0", "1"], 1000);
+      });
+  });
+  </script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+[class*="col-"] {
+    col-12
+}
+
+@media screen and (min-width: 600px) {
+    .col-m-1 {
+        width: 8.33%;
+    }
+    .col-m-2 {
+        width: 16.67%;
+    }
+    .col-m-3 {
+        width: 25%;
+    }
+    .col-m-4 {
+        width: 33.33%;
+    }
+    .col-m-5 {
+        width: 41.67%;
+    }
+    .col-m-6 {
+        width: 50%;
+    }
+    .col-m-7 {
+        width: 58.33%;
+    }
+    .col-m-8 {
+        width: 66.67%;
+    }
+    .col-m-9 {
+        width: 75%;
+    }
+    .col-m-10 {
+        width: 83.33%;
+    }
+    .col-m-11 {
+        width: 91.67%;
+    }
+    .col-m-12 {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .col-1 {
+        width: 8.33%;
+    }
+    .col-2 {
+        width: 16.67%;
+    }
+    .col-3 {
+        width: 25%;
+    }
+    .col-4 {
+        width: 33.33%;
+    }
+    .col-5 {
+        width: 41.67%;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .col-7 {
+        width: 58.33%;
+    }
+    .col-8 {
+        width: 66.67%;
+    }
+    .col-9 {
+        width: 75%;
+    }
+    .col-10 {
+        width: 83.33%;
+    }
+    .col-11 {
+        width: 91.67%;
+    }
+    .col-12 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    #menuwrap li {
+        margin-right: 15px;
+    }
+    .articlebox {
+        width: 60%;
+        height: 60%;
+    }
+    .articlecontainer h2 {
+        font-size: 1.3em;
+        font-weight: 300;
+    }
+}
+@media screen and (min-width: 595px) {
+    #mobilemenu, #mobilenavlink, #headerlogo {
+        display: none;
+        visibility: hidden;
+    }
+    #m1,
+    #m2,
+    #m3,
+    #m4 {
+        background-image: url();
+    }
+}
+@media screen and (max-width: 595px) {
+    #menuwrap {
+        display: none;
+    }
+    #mobilemenu, #mobilenavlink {
+        display: block;
+    }
+    #m1,
+    #m2,
+    #m3,
+    #m4 {
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 475px) {
+    header {
+        height: 40px;
+    }
+    #mobilenavlink,
+    #social {
+        line-height: 40px
+    }
+    #mobilemenu {
+        top: 41px
+    }
+    #social {
+        padding-right: 25px;
+    }
+    #headerlogo {
+      height: 35px;
+      padding-top: 1px;
+    }
+    .articlebox {
+        width: 70%;
+        height: 60%;
+    }
+    .articlecontainer h2 {
+        font-size: 1em;
+        font-weight: 400;
+    }
+    #tools:before, #vibes:before, #peace:before, #paint:before {
+        content: "";
+        display: block;
+        height: 41px;
+        /* fixed header height*/
+
+        margin: -41px 0 0;
+        /* negative fixed header height */
+    }
+}
+@media screen and (max-height: 450px) {
+    .articlebox {
+        width: 40%;
+        height: 70%;
+    }
+    .articlecontainer h2 {
+        font-size: .9em;
+        font-weight: 400;
+    }
+}

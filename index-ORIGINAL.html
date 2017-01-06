@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Adam Davis</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://use.fontawesome.com/83a544bac4.js"></script>
+<script src="scroll.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body id="top">
+	<div class="site">
+    <div id="headercontainer">
+        <header>
+            <div id="logo">
+                ADAM DAVIS
+            </div>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#work">Work</a>
+                <a href="#contact">Contact</a>
+                <a href="#">Blog</a>
+            </nav>
+        </header>
+    </div>
+    <main>
+        <div id="hero">
+        <div id="introcontainer">
+            <div id="intro">
+                <span class="introtext">WEB DESIGNER &amp;<br>
+									FRONT-END DEVELOPER</span>
+                <div id="subhead">
+									<em>Based in Dallas, TX</em>
+                </div>
+            </div>
+        </div>
+      </div>
+
+        <div class="centerpage">
+          <span id="about"></span>
+            <h1>Hi there.</h1>
+            <p>Adam Davis can create a fresh reflection of your corporate business factory, boutique shopping store, or any pursuit, to provide the best experience for your customers and clients.</p>
+            <p><img id="jobs" src="images/TheJobs.jpg" alt="Photo of Adam Davis">Adam is a huge nerd and passionate Internet veteran. He got his first computer in 1994 and first daialed into local BBSs on a 2400 baud modem before upgrading to the 28.8, then 56k and so on. Those free trials of AOL went a long way in the 90s. He's been dabbling in HTML on and off since 1998, learning by doing, and out of necessity in 2005-2010 built and maintained three sites for a prominent morning talk radio host he worked for as an editor, producer and general techy guy.</p>
+            <p>Adam is also a highly skilled audio engineer. Always interested in experimenting with electronics, microphones, speakers, recording, and a live music enthusiast, he inadvertenty fell deep into the live event buisines. What started as running sound for bands on the weekend for fun and extra money eventually turned into a crazy lifestyle with long, late hours and no semblance of a normal schedule.</p>
+            <p>It's time to get out of the event world and back into development. In Adam's mind, web programming and audio are almost the same thing - it's all about getting the signal flow right and troubleshooting when it doesn't work, and those are two of his favorite things to do.</p>
+        </div>
+    </main>
+    <span id="work"></span>
+    <div id="thumbs" class="center">
+        <h2>Recent Work</h2>
+        <div class="thumb"><a href="casa/"><img src="images/casa.png" alt="Casa Curator" /></a>
+            <br /><span class="cap">Casa Curator - Interior Design Blog</span></div>
+        <div class="thumb"><a href="retropalmsprings/"><img src="images/rps.png" alt="Retro Palm Springs Website" /></a>
+            <br /><span class="cap">RetroPalmSprings.com</span></div>
+            <div class="thumb"><a href="dobbin/"><img src="images/dobbin.png" alt="Dobbin Street Custom Bicycles" /></a>
+                <br /><span class="cap">Dobbin Street Custom Bicycles</span></div>
+        <div class="thumb"><a href="brewdfwipa/"><img src="images/brewdfwipa.png" alt="BrewDFW IPA Guide" /></a>
+            <br /><span class="cap">BrewDFW.com</span></div>
+        <div class="thumb"><a href="TAP/"><img src="images/tap.png" alt="Texas Ale Project Mobile Site" /></a>
+            <br /><span class="cap">BrewDFW Mobile Site</span></div>
+            <div class="thumb"><a href="brewmaps/"><img src="images/brewmaps.png" alt="BrewDFW - Brewery Maps" /></a>
+                <br /><span class="cap">BrewDFW - Brewery Maps</span></div>
+    </div>
+<div class="center">
+ <h2>Contact</h2>
+<div id="formbox">
+    <form id="contact" class="form-container" name="contactform" method="post" action="process.php" target="sent">
+            <div class="form-title">
+			Name</div>
+    		<input id="name" class="form-field" name="name" type="text" required>
+            <br />
+            <div class="form-title">
+			Email</label></div>
+    		<input id="email" class="form-field" name="email" type="email" required>
+            <br />
+            <div class="form-title">Message</div>
+    		<textarea id="message"  class="form-field"  name="message" rows="6" style="vertical-align: text-top;" type="text" required></textarea>            			<br />
+            <div class="submit-container">
+                <input class="submit-button" type="submit" value="Submit" onclick="toggle()" />
+            </div>
+<iframe name="sent" id="sent"></iframe>
+
+
+        </form>
+</div>
+</div>
+</div>
+<footer>
+<nav class="footernav">
+                <a href="#about">About</a>
+                <a href="#work">Work</a>
+                <a href="#contact">Contact</a>
+                <a href="#">Blog</a>
+            </nav>
+       
+        <div id="social">
+			<a href="https://www.instagram.com/adamcycle/" target="_blank"><i class="fa fa-instagram social" aria-hidden="true"></i></a><a href="http://www.linkedin.com/in/adamcdavis" target="_blank"><i class="fa fa-linkedin social" aria-hidden="true"></i></a>
+        </div>
+		<div id="copy">
+          <div class="footerlink"><span id="left"><a href="#top"><i class="fa fa-chevron-up" aria-hidden="true"></i> Back to Top</a>
+          <br> &copy; 2016 Adam Davis</span> </div>
+		</div>
+    </footer>
+
+<script>
+var navstate = "closed";
+
+function toggle() {
+  if (navstate == "closed") {
+    document.getElementById("contact").style.height = "380px";
+	document.getElementById("sent").style.opacity = "1";
+    navstate = "open";
+  } else {
+    document.getElementById("contact").style.height = "350px";
+    document.getElementById("sent").style.opacity = "0";
+    navstate = "closed";
+  }
+}
+</script>
+</body>
+</html>

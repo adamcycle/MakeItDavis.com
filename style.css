@@ -1,0 +1,369 @@
+@import url('//fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700');
+@import url('//brick.a.ssl.fastly.net/Montserrat:100,200,300,400');
+html,
+body {
+height: 100%;
+}
+
+.site {
+min-height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    color: #171717;
+}
+* {
+    -webkit-transition:all 200ms ease;
+         -moz-transition:all 200ms ease;
+               -o-transition:all 200ms ease;
+                     transition:all 200ms ease;
+}
+#headercontainer {
+    width: auto;
+    background: #171717;
+    margin: auto;
+}
+header {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    color: #fefefe;
+    height: auto;
+}
+#logo {
+    font-family: 'Lato';
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+    border: 2px solid #fefefe;
+    display: inline-block;
+    padding: 10px 15px 10px 15px;
+    margin: 15px;
+    font-size: 1.5em;
+    font-weight: 300;
+    text-transform: uppercase;
+    cursor: default;
+}
+nav, #footnav {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #171717;
+    padding: 5px;
+    display: inline-flex;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 200;
+    letter-spacing: 0.05em;
+}
+nav a, #footnav a {
+    text-decoration: none;
+    color: #fefefe;
+    padding: 0 10px 0 10px;
+}
+nav a:hover, footnav a:hover {
+    text-decoration: none;
+    color: #666;
+}
+#hero {
+    background: url("images/dallas2.jpg");
+    background-size: cover;
+    background-position: 50% 12%;
+    position: relative;
+    height: 40vh;
+    z-index: -1;
+}
+p {
+    padding: 0 15px 0 15px;
+    line-height: 1.5;
+    font-size: 1.15em;
+    font-weight: 300;
+}
+main {
+    margin: 0 auto;
+    position: relative;
+}
+main img {
+    width: 100%;
+}
+
+#introcontainer {
+position: relative;
+left: 50%;
+top: 50%;
+transform: translate(-50%,-50%);
+}
+
+#intro {
+    position: relative;
+    font-size: 1.5em;
+    text-align: center;
+    color: #fefefe;
+    font-weight: 100;
+}
+#jobs {
+    max-width: 150px;
+    float: left;
+    margin: 5px 20px 10px 0;
+    opacity: 0.8;
+}
+.centerpage {
+    margin: auto;
+    max-width: 1200px;
+}
+.center {
+	text-align: center;
+}
+h1 {
+    text-align: center;
+}
+#thumbs {
+    /*width: 90vw;
+    max-width: 1000px;*/
+    margin: 0 auto;
+    text-align: center;
+}
+.thumb {
+    width: 30vw;
+    display: inline-block;
+    font-size: 1em;
+    margin: 10px 25px 10px 0;
+    max-width: 460px;
+    vertical-align: top;
+
+}
+.thumb img {
+    width: 100%;
+    border: 8px solid #f5f5f5;
+    min-width: 250px;
+
+}
+.thumb img:hover {
+  border-color: #ebebeb;
+}
+footer {
+    margin-top: 40px;
+    padding: 20px 20px;
+    background: #171717;
+    height: 80px;
+	color: #fefefe;
+}
+.footernav {
+	font-size: small;
+}
+#copy {
+    margin: auto;
+    font-size: small;
+    text-transform: uppercase;
+    color: #fefefe;
+	padding: 15px;
+}
+.footerlink a {
+    text-decoration: none;
+    color: black;
+    font-size: smaller;
+    text-transform: uppercase;
+    color: #fefefe;
+}
+.footerlink a:hover {
+    color: #666;
+}
+#social {
+    float: right;
+    font-size: 2em;
+color: #ccc;
+}
+#social a {
+    text-decoration: none;
+    color: inherit;
+    padding: 0 10px 0 0;
+}
+#social a:hover {
+    color: #666;
+}
+
+.introtext {
+    white-space: nowrap;
+    font-size: 1.8em;
+    letter-spacing: 0.02em;
+}
+#contact {
+    text-align: center;
+	margin-bottom: 25px;
+}
+#formbox {
+	height: 350px;
+}
+.form-container {
+    display: inline-block;
+    text-align: center;
+    border: 0px solid #ffffff;
+    background: #ebebeb;
+    text-decoration: none;
+    vertical-align: middle;
+	width: 100%;
+    min-width: 250px;
+    padding: 10px;
+    max-width: 300px;
+	margin: auto;
+	margin-bottom: 25px;
+	box-sizing: border-box;
+	height: 350px;
+}
+.form-field {
+    border: 1px solid #e8e8e8;
+    background: #fffef5;
+    color: #b0b0b0;
+    margin-bottom: 20px;
+    width: 100%;
+	padding: 5px 0;
+
+}
+.form-title {
+	text-align: left;
+}
+.form-field:focus {
+    background: #fff;
+    color: #6b6b6b;
+
+}
+.form-container h2 {
+    text-shadow: #ffffff 0 1px 0;
+    font-size: 18px;
+    margin: 0 0 10px 0;
+    font-weight: bold;
+    text-align: center;
+}
+.submit-container {
+    margin: 8px 0;
+    text-align: right;
+}
+.submit-button {
+    border: 0px solid #ffffff;
+    background: #5a7343;
+    color: #ffffff;
+    padding: 8.5px 18px;
+    font-size: 14px;
+    text-decoration: none;
+    vertical-align: middle;
+}
+#sent {
+	    margin: 0;
+    padding: 0;
+    border: none;
+
+}
+/*@media screen and (max-width: 1010px) {
+  .thumb img {
+      width: 400px;
+  }
+}*/
+
+
+@media screen and (max-width: 680px) {
+  * {
+      -webkit-transition: none;
+           -moz-transition: none;
+                 -o-transition: none;
+                       transition: none;
+  }
+
+  .cap {
+    font-size: .8em;
+  }
+  #hero {
+    height: 35vh;
+  }
+    #subhead {
+        font-size: 1em;
+    }
+    .introtext {
+        font-size: 1.5em;
+    }
+}
+@media screen and (max-width: 575px) {
+    header {
+        padding: 5px 15px;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 568px) {
+    #hero {
+      height: 35vh;
+    }
+    .introtext {
+        font-size: 1.2em;
+    }
+    #subhead {
+        font-size: 0.8em;
+    }
+    #intro {
+      font-weight: 300;
+
+    }
+    #about h1 {
+      font-size: 1.5em;
+    }
+    .thumb {
+        margin: 5px;
+        width: inherit;
+    }
+    .thumb img {
+        width: 100%;
+        max-width: 260px;
+    }
+}
+@media screen and (max-width: 455px) {
+    #logo {
+        font-size: 1.2em;
+        margin: 5px;
+        padding: 5px 10px 5px 10px;
+    }
+    nav a {
+        display: inline-block;
+        padding: 10px;
+    }
+    nav {
+        font-size: 0.8em;
+        padding: 0;
+    }
+    .introtext {
+        font-size: 0.9em;
+        white-space: normal;
+    }
+    #subhead {
+        display: none;
+    }
+    #hero {
+        background-position: 50% 20%;
+        height: 25vh;
+    }
+    #jobs {
+        display: none;
+    }
+    #intro {
+      font-weight: 300;
+
+    }
+    #about h1 {
+      font-size: 1.2em;
+    }
+.copy {
+float: left;
+margin: 0;
+}
+.social {
+ padding-top: 15px;
+}
+}
+
+@media screen and (max-width: 320px) {
+
+  #subhead {
+      display: none;
+  }
+  #hero {
+      background-position: 50% 25%;
+      height: 32vh;
+  }
+}
